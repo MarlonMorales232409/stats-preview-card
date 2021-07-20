@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(233, 47%, 7%);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.display{
+
+}
+
+.container{
+    margin:15% auto;
+    overflow: hidden;
+    border-radius: 8px;
+    max-width: 1000px;
+    max-height: 800px;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.card-principal{
+    max-width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 60px;
+}
+
+.card-tittle{
+    font-size: 38px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.card-tittle span{
+    color: hsl(277, 64%, 61%);
+}
+
+.card-text{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color:hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 40px;
+}
+
+.estadistics{
+    margin-top: 40px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+
+}
+
+.estadistics p{
+    margin-top: 6px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.4);
+}
+.image-container{
+    max-width: 50%;
+    background-color: #7722ac;
+
+}
+
+@media screen and (max-width: 1024px){
+
+    .container{
+        max-width: 800px;
+        height: 400px;
+    }
+
+    .card-principal{
+        padding: 40px;
+    }
+
+    .card-tittle{
+        font-size: 34px;
+    }
+
+    .card-text{
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+    .estadistics p{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+       flex-flow: column-reverse nowrap;
+       max-width: 60%;
+       height: 100%;
+       
+    }
+
+    .card-principal{
+        max-width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .image-container{
+        max-width: 100%;
+        height: 50%;
+    }
+
+    .card-principal{
+        padding: 30px;
+    }
+
+    .card-tittle{
+        font-size: 34px;
+    }
+
+    .card-text{
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+     .estadistics{
+        flex-direction: column;
+        
+     }
+
+    .estadistics p{
+        margin-bottom: 20px;
+        font-size: 11px;
+
+    }
+
+    img{
+        margin-bottom: -4px;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .container{
+       max-width: 90%;
+
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .card-tittle{
+        font-size: 30px;
+    }
+
+    .card-text{
+        font-size: 11px;
+    }
+
+    .estadistics p{
+        margin-bottom: 25px;
+    }
+   
+}
